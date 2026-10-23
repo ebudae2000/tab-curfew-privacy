@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tab Curfew Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 3rem 1.25rem 5rem; max-width: 44rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #14161a; }
+    h1, h2 { color: #fff; }
+    .updated { color: #9aa4b2; }
+    hr { border-color: #2a2f37; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.12rem; margin: 2.2rem 0 .6rem; letter-spacing: -.005em; }
+  p, li { margin: .55rem 0; }
+  ul { padding-left: 1.3rem; }
+  .updated { color: #626b78; font-size: .92rem; margin-top: 0; }
+  hr { border: 0; border-top: 1px solid #e3e6ea; margin: 2rem 0; }
+  code { font: .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  footer { margin-top: 3rem; font-size: .85rem; color: #626b78; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+
+<h1>Tab Curfew Privacy Policy</h1>
+<p class="updated">Last updated: 23/10/2026</p>
+
+<p>Tab Curfew is a browser extension that closes tabs you have not used for a chosen period and keeps
+a local list of the tabs it closed.</p>
+
+<h2>What the extension handles</h2>
+<p>To do its job, Tab Curfew reads and stores:</p>
+<ul>
+  <li>the URL, title, and favicon of open tabs;</li>
+  <li>the time each tab was last active, and (when the "time since opened" clock is selected) when it
+      was opened;</li>
+  <li>the URL, title, site, favicon, last-active time, and close time of tabs it closes;</li>
+  <li>your settings, including the time span, allowlist, check interval, and pause state.</li>
+</ul>
+<p>The extension does <strong>not</strong> read page content, form fields, passwords, cookies, or keystrokes. It has
+no host permissions and no content scripts.</p>
+
+<h2>Where the data goes</h2>
+<p>All of this data is stored locally in your browser profile using <code>chrome.storage.local</code>. <strong>It is
+never transmitted to the developer or to anyone else.</strong> The extension contains no network requests,
+no analytics, no advertising, and no third-party SDKs.</p>
+
+<h2>How long it is kept</h2>
+<ul>
+  <li>The closed-tab list keeps the 200 most recent entries; older entries are discarded.</li>
+  <li>Activity timestamps are kept while the tab exists and are pruned when tabs close.</li>
+  <li>Settings and the closed-tab list remain until you clear them or uninstall the extension.</li>
+  <li>Uninstalling the extension removes its local storage.</li>
+</ul>
+
+<h2>Your controls</h2>
+<ul>
+  <li><strong>Clear list</strong> in the popup removes the closed-tab entries without reopening them.</li>
+  <li><strong>Pause 1 hour</strong> stops automatic closing temporarily.</li>
+  <li>Disabling or uninstalling the extension stops all processing.</li>
+  <li>You can clear extension storage from Chrome's extension details page.</li>
+</ul>
+
+<h2>Sharing</h2>
+<p>No data is sold, rented, or shared with third parties. There is no data to share because nothing
+leaves the device.</p>
+
+<h2>Children</h2>
+<p>Tab Curfew is a general-purpose utility and is not directed at children.</p>
+
+<h2>Changes</h2>
+<p>If a future version changes how data is handled, this policy will be updated and the change will be
+described in the extension's release notes.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:me@eallie.co.za">me@eallie.co.za</a></p>
+
+<hr>
+<footer>Tab Curfew is a Chrome extension. This page is its privacy policy, served as a static site by GitHub Pages.</footer>
+
+</body>
+</html>
